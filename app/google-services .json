@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "14710323054",
+    "project_id": "wonder-46599",
+    "storage_bucket": "wonder-46599.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14710323054:android:82ed2f2e3a08250606737f",
+        "android_client_info": {
+          "package_name": "com.soumayaguenaguen.wonder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14710323054-eep1kkrajgkbh78ji13jcuqe7t7cnn0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANjFcFBcnzk4G_H-kqR9XhxeNw9UCrAIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14710323054-eep1kkrajgkbh78ji13jcuqe7t7cnn0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

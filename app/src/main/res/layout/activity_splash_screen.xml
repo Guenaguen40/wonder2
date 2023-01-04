@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    android:id="@+id/layout"
+    android:background="@drawable/animatedbk">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="UselessParent">
+    <ImageView
+        android:layout_marginTop="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/discove"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="331dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="72dp"
+        android:text="@string/explore"
+        android:radius="24dp"
+        android:backgroundTint="#196EEE" />
+
+</LinearLayout>
+</RelativeLayout>

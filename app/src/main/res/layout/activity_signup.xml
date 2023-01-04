@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bk">
+
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_marginTop="220dp"
+            android:layout_height="487dp"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/whitebck">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/regUserPhoto"
+                android:layout_marginEnd="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/userphoto"
+                android:contentDescription="@string/todo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_new_account"
+                    android:textDirection="firstStrongLtr"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat,RtlHardcoded" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_fill_in_with_your_information"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="25dp"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/textName"
+                    android:layout_width="305dp"
+                    android:layout_height="52dp"
+                    android:padding="16dp"
+                    android:textColorHint="#696974"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/username"
+                    android:background="@drawable/passem"
+                    android:autofillHints="no"
+                    android:inputType="text" />
+                <EditText
+                    android:id="@+id/textEmail"
+                    android:layout_width="305dp"
+                    android:layout_height="52dp"
+                    android:padding="16dp"
+                    android:textColorHint="#696974"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/email_or_phone_number"
+                    android:background="@drawable/passem"
+                    android:autofillHints="no"
+                    android:inputType="textEmailAddress" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textPass"
+                    android:layout_width="305dp"
+                    android:layout_height="52dp"
+                    android:autofillHints="no"
+                    android:maxLength="8"
+                    android:background="@drawable/passem"
+                    android:drawableEnd="@drawable/visibility"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleDrawable="@drawable/visibilityoff"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#696974"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="0dp"
+                    android:textSize="14sp"
+                    android:importantForAutofill="no"
+                    android:textColor="#171725"
+                    android:text="@string/by_creating_an_account_you_agree_to_our_term_and_conditions"/>
+                <Button
+                    android:id="@+id/btnSignUpAcc"
+                    android:layout_width="305dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:radius="24dp"
+                    android:text="@string/sign_in"
+                    android:backgroundTint="@color/bleu"/>
+
+                <TextView
+                    android:id="@+id/ques"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text=""
+                    tools:ignore="InefficientWeight" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>

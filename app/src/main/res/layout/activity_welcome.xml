@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcomeActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bk">
+
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_marginTop="280dp"
+        android:layout_height="377dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/bck">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_wonder"
+            android:textDirection="firstStrongLtr"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="22sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat,RtlHardcoded" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/live_life_with_no_excuses_travel_with_no_regret"
+            />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="25dp"
+    android:gravity="center">
+        <ImageButton
+            android:id="@+id/google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:src="@drawable/googlelogin"
+            android:contentDescription="@string/todo" />
+        <ImageButton
+            android:id="@+id/fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fblogin"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"/>
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/signIn"
+                android:layout_width="145dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="62dp"
+                android:text="@string/sign_in"
+                android:radius="24dp"
+                android:backgroundTint="#7CC4EE"
+                android:textColor="#171725"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="145dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="62dp"
+                android:text="@string/signup"
+                android:layout_marginLeft="19dp"
+                android:radius="24dp"
+                android:backgroundTint="#171725"
+                tools:ignore="RtlHardcoded"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
